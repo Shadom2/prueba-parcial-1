@@ -7,12 +7,10 @@ document.addEventListener('DOMContentLoaded', () => {
   const carreraInput = document.getElementById('carrera');
   const listaParticipantes = document.getElementById('listaParticipantes');
 
-  // Cambiar tema claro/oscuro
   temaBtn.addEventListener('click', () => {
     body.classList.toggle('tema-oscuro');
   });
 
-  // Validar formulario antes de enviar
   form.addEventListener('submit', (e) => {
     e.preventDefault();
 
@@ -29,7 +27,6 @@ document.addEventListener('DOMContentLoaded', () => {
     form.reset();
   });
 
-  // Cargar participantes aleatorios de la API
   fetch('https://randomuser.me/api/?results=5')
     .then(response => response.json())
     .then(data => {
