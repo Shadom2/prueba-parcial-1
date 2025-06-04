@@ -1,1 +1,49 @@
 <!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PUCETEC Dev Challenge</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>PUCETEC Dev Challenge</h1>
+    <p>Un evento para demostrar tus habilidades en desarrollo web, competir y aprender junto a otros talentos.</p>
+    <button id="temaBtn">Cambiar tema</button>
+  </header>
+
+  <main>
+    <section>
+      <h2>Formulario de Registro</h2>
+      <form id="registroForm">
+        <label>Nombre: <input type="text" id="nombre" required /></label><br />
+        <label>Correo: <input type="email" id="correo" required /></label><br />
+        <label>Carrera: <input type="text" id="carrera" required /></label><br />
+        <button type="submit">Registrarse</button>
+      </form>
+    </section>
+
+    <section>
+      <h2>Categorías:</h2>
+      <ul>
+        <li>Desarrollo Web</li>
+        <li>Desarrollo móvil</li>
+        <li>Proyectos de Software</li>
+      </ul>
+    </section>
+    
+    <section id="participantes">
+      <h2>Participantes de otros eventos</h2>
+      <div id="listaParticipantes"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Recuerda que tu eres el unico que impone tus límites</p>
+    <p>Usa este Dev Challenge para romperlos y mejorar</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
